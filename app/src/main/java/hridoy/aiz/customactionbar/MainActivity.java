@@ -3,6 +3,7 @@ package hridoy.aiz.customactionbar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.download:
+                startActivity(new Intent(this,Main2Activity.class));
                 Toast.makeText(this,"Download is clicked",Toast.LENGTH_SHORT).show();
             case R.id.send:
                 Toast.makeText(this,"Send is clicked",Toast.LENGTH_SHORT).show();
